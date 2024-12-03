@@ -3,11 +3,8 @@ name = "advent-of-code-2024"
 
 resolver = "2"
 
-members = [
-    #"day-*",
-    "scripts",
-]
-#default-members = ["day-*"]
+members = ["day-*", "scripts"]
+default-members = ["day-*"]
 
 [workspace.dependencies]
 itertools = { version = "0.13.0" }
