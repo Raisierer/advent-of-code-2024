@@ -39,7 +39,7 @@ fn main() -> Result<(), reqwest::Error> {
         .send()?
         .text()?;
 
-    for filename in ["input1.txt", "inputs2.txt"] {
+    for filename in ["input1.txt", "input2.txt"] {
         let file_path = args
             .current_working_directory
             .join(&args.day)
