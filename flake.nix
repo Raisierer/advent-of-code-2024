@@ -32,7 +32,12 @@
               modules = [
                 {
                   # https://devenv.sh/reference/options/
-                  packages = [ pkgs.hello ];
+                  packages = with pkgs; [
+                    hello
+                    just
+                    cargo-generate
+                    openssl
+                  ];
 
                   enterShell = ''
                     hello
@@ -43,6 +48,8 @@
                       enable = true;
                     };
                   };
+
+                  dotenv.enable = true;
 
                   processes.hello.exec = "hello";
                 }

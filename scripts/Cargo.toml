@@ -1,0 +1,12 @@
+[package]
+name = "scripts"
+edition = "2021"
+
+[[bin]]
+name = "get-aoc-input"
+path = "src/bin/get-aoc-input.rs"
+
+[dependencies]
+clap = { version = "4.5.22", features = ["derive"] }
+nom.workspace = true
+reqwest = { version = "0.12.9", features = ["blocking", "json"] }
