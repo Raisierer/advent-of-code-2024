@@ -1,0 +1,18 @@
+[workspace]
+name = "advent-of-code-2024"
+
+resolver = "2"
+
+members = ["day-*"]
+default-members = ["day-*"]
+
+[workspace.dependencies]
+itertools = { version = "0.13.0" }
+nom = { version = "7.1.3" }
+nom_locate = { version = "4.2.0" }
+nom-supreme = { version = "0.8.0" }
+rayon = { version = "1.10.0" }
+tracing = { version = "0.1.41" }
+tracing-subscriber = { version = "0.3.19", features = ["fmt", "env-filter"] }
+thiserror = { version = "2.0.4" }
+
